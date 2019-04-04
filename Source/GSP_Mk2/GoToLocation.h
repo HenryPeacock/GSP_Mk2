@@ -5,9 +5,9 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "AIController.h"
-//#include "Runtime/Engine/Classes/AI/Navigation/NavigationTypes.h"
+#include "Runtime/NavigationSystem/Public/NavigationPath.h"
 #include "NavigationSystem.h"
-//#include "NavigationPath.h"
+
 
 #include "GoToLocation.generated.h"
 
