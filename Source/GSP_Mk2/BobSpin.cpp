@@ -32,11 +32,12 @@ void UBobSpin::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ...
+	// apply rotation motion to actor
 	GetOwner()->AddActorLocalRotation(FRotator(0.0f, spinSpeed * DeltaTime, 0.0f));
 
 	FVector Offset = FVector(0, 0, sin(GetWorld()->GetTimeSeconds()*bobSpeed) * DeltaTime * bobHeight);
 
+	// apply bobbing motion offset to actor
 	GetOwner()->SetActorLocation(startPos + Offset);
 }
 
