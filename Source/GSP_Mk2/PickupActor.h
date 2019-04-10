@@ -40,7 +40,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 	USphereComponent* CollisionSphere;
 
-	ACharacter* player;
+	//ACharacter* player;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Components")
 	AActor* CollideTestActor;
